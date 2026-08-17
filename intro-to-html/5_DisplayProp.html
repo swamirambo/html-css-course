@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      p,button {
+        border-color: red;
+        border-style: solid;
+        border-width: 2px;
+      }
+
+      .display-inline {
+        display: inline-block;
+        border-color: red;
+        border-style: solid;
+        border-width: 2px;
+      }
+
+      .display-block {
+        display: block;
+        border-color: red;
+        border-style: solid;
+        border-width: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Inline-Block element1</button>
+    <button>Inline-Block element2</button>
+
+    <p>This is block element, which takes full line</p>
+    <p>This is another block element.</p>
+
+    <!--Changing the display prop-->
+    <p class="display-inline">This is block element, which takes full line</p>
+    <p class="display-inline">This is another block element.</p>
+
+    <button class="display-block">Inline-Block element1</button>
+    <button class="display-block">Inline-Block element2</button>
+  </body>
+</html>
