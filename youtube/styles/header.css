@@ -1,0 +1,27 @@
+.header {
+  height: 70px;
+  display: flex;
+  
+}
+
+.left-section {
+  background-color: lightblue;
+  width: 20%;
+}
+
+.middle-section {
+  background-color: lightpink;
+  flex: 1;
+  max-width: 500px;
+}
+
+.right-section {
+  background-color: lightblue;
+  width: 20%;
+}
+
+.search-bar {
+  font-size: 16px;
+  margin-left: 15px;
+  display: block;
+}

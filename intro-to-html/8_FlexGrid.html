@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexgrid</title>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <!--1 In Flex, width gets adjust based on the content. Unlike Grid -->
+    <div style="
+      display: flex;
+      flex-direction: row;">
+      <div style="background-color: lightblue;">div1 this is a text that do not wraps in flex</div>
+      <div style="background-color: lightpink;">div1</div>
+    </div>
+
+    <!--2 Flex- flex:1 is equvalent to 1 fr in grid-->
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;">
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+      <div style="background-color: lightpink;flex: 1;">flex 1</div>
+      <div style="background-color: lightgreen ;flex: 2">flex 2</div>
+    </div>
+
+    <!--3 we can chnage the order of div and it retains its own width beca its inline (My understandig)-->
+    <div style="
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;">
+      <div style="background-color: lightpink;flex: 1;">flex 1</div>
+      <div style="background-color: lightblue; width: 700px;">100px</div>
+      <div style="background-color: lightgreen;flex: 2">flex 2</div>
+    </div>
+
+    <!--4 Header using flex 
+          - fixed width inner divs
+          - justify-content: end/center   
+    -->
+    <div style="
+      margin-top: 30px;
+
+      height: 70px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: gray;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: end;  
+      ">          <!-- Using justify-content we can align the inner divs-->
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+      <div style="background-color: lightpink; width: 100px;">100px</div>
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+    </div>
+
+    <!--5 Header using flex 
+          - justify-content: space-between 
+    -->
+    <div style="
+      margin-top: 30px;
+
+      height: 70px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: gray;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;  
+      ">          <!-- Using justify-content we can align the inner divs-->
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+      <div style="background-color: lightpink; width: 100px;">100px</div>
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+    </div>
+
+  <!--6 Header using flex (Vertical alignment)
+        -  align-items: stretch; (default)
+                      : start, center, end
+    -->
+    <div style="
+      margin-top: 30px;
+
+      height: 70px;
+      border-style: solid;
+      border-width: 1px;
+      border-color: gray;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: end;
+      ">          <!-- Using justify-content we can align the inner divs-->
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+      <div style="background-color: lightpink; width: 100px;">100px</div>
+      <div style="background-color: lightblue; width: 100px;">100px</div>
+    </div>
+</body>
+</html>
